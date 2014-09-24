@@ -1,4 +1,8 @@
-.icon-store{
+body{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.icon-store, .icon-store:hover{
     max-width: 100%;
     background-color: transparent;
     border: none;
@@ -14,7 +18,8 @@ header{
     position: relative;
     height: auto;
     color: #fff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.8) ;
+    /*text-shadow: 1px 1px 1px rgba(0,0,0,0.8);*/
+    text-shadow: 1px 1px 0 rgba(140,140,140,0.6) , -1px -1px 1px rgba(0,0,0,.7) ;
 }
 
 
@@ -42,65 +47,22 @@ header{
     text-shadow: 1px 1px 0 rgba(140,140,140,0.6) , -1px -1px 1px rgba(0,0,0,.7) ;
     margin-bottom: 0;
 
-    font-family: Aldrich, Helvetica, sans-serif;
-    font-family: Alef, Helvetica, sans-serif;
-    font-family: Alike Angular, Helvetica, sans-serif;
-    font-family: Allerta Stencil, Helvetica, sans-serif;
-    font-family: Arbutus, Helvetica, sans-serif;
-    font-family: Atomic Age, Helvetica, sans-serif;
-    font-family: Audiowide, Helvetica, sans-serif;
-    font-family: Averia Sans Libre, Helvetica, sans-serif;
-    font-family: Baumans, Helvetica, sans-serif;
-    font-family: Belleza, Helvetica, sans-serif;
-    font-family: BenchNine, Helvetica, sans-serif;
-    font-family: Bigshot One, Helvetica, sans-serif;
-    font-family: Bitter, Helvetica, sans-serif;
-    font-family: Brawler, Helvetica, sans-serif;
-    font-family: Bree Serif, Helvetica, sans-serif;
-    font-family: Cambo, Helvetica, sans-serif;
-    font-family: Candal, Helvetica, sans-serif;
-    font-family: Cantarell, Helvetica, sans-serif;
-    font-family: Carrois Gothic, Helvetica, sans-serif;
-    font-family: Chelsea Market, Helvetica, sans-serif;
-    font-family: Cinzel, Helvetica, sans-serif;
-    font-family: Coda, Helvetica, sans-serif;
-    font-family: Concert One, Helvetica, sans-serif;
-    font-family: Contrail One, Helvetica, sans-serif;
-    font-family: Convergence, Helvetica, sans-serif;
-    font-family: Copse, Helvetica, sans-serif;
-    font-family: Corben, Helvetica, sans-serif;
-    font-family: Crimson Text, Helvetica, sans-serif;
-    font-family: Crushed, Helvetica, sans-serif;
-    font-family: Cuprum, Helvetica, sans-serif;
-    font-family: Cutive Mono, Helvetica, sans-serif;
-    font-family: Days One, Helvetica, sans-serif;
-    font-family: Diplomata, Helvetica, sans-serif;
-    font-family: Doppio One, Helvetica, sans-serif;
-    font-family: Dorsa, Helvetica, sans-serif;
-    font-family: Duru Sans, Helvetica, sans-serif;
-    font-family: Economica, Helvetica, sans-serif;
-    font-family: Electrolize, Helvetica, sans-serif;
-    font-family: Elsie, Helvetica, sans-serif;
-    font-family: Esteban, Helvetica, sans-serif;
-    font-family: Exo, Helvetica, sans-serif;
-    font-family: Expletus Sans, Helvetica, sans-serif;
-    font-family: Federant, Helvetica, sans-serif;
-    font-family: Federo, Helvetica, sans-serif;
-    font-family: Flamenco, Helvetica, sans-serif;
-    font-family: Forum, Helvetica, sans-serif;
-    font-family: Fredericka the Great, Helvetica, sans-serif;
-    font-family: Fredoka One, Helvetica, sans-serif;
-    font-family: GFS Neohellenic, Helvetica, sans-serif;
-    font-family: Geo, Helvetica, sans-serif;
-    font-family: Goblin One, Helvetica, sans-serif;
-    font-family: Gravitas One, Helvetica, sans-serif;
     font-family: Gruppo, Helvetica, sans-serif;
+
+    /*
+   font-family: Wire One, Helvetica, sans-serif;
+   font-family: Voltaire, Helvetica, sans-serif;
+   font-family: Poiret One, Helvetica, sans-serif;
+   font-family: Share Tech, Helvetica, sans-serif;
+   font-family: Rajdhani, Helvetica, sans-serif;
+*/
 }
 
 .header-top p{
     margin-top: 5px;
     text-align: right;
     max-width:100%;
+    text-shadow: 1px 1px 0 rgba(140,140,140,0.6) , -1px -1px 1px rgba(0,0,0,.7) ;
 }
 
 .header-bg{
@@ -118,6 +80,21 @@ header{
     top: -200px;
     padding-bottom: 200px;
     box-sizing: content-box;
+}
+
+.registration{
+    padding: 20px;
+    /*font-family: Gruppo, Helvetica, sans-serif;*/
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgba(44, 62, 80,.4);
+    border-color: rgb(44, 62, 80);
+    border-width: 4px;
+    border-style: dashed;
+}
+.registration:hover{
+    background-color: rgba(255, 255, 255,.4);
+    color: rgb(44, 62, 80);
 }
 
 .header-content{
