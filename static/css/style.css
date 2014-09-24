@@ -1,0 +1,161 @@
+.icon-store{
+    max-width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.icon-store img{
+    max-width: 100%;
+    max-height: 70px;
+}
+
+header{
+    position: relative;
+    height: auto;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.8) ;
+}
+
+
+.header-top{
+    padding: 30px 5px;
+    display: inline-block;
+}
+
+.header-top h1 {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    font-size: 100px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    text-transform: normal;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: pre;
+    text-shadow: 1px 1px 0 rgba(140,140,140,0.6) , -1px -1px 1px rgba(0,0,0,.7) ;
+    margin-bottom: 0;
+
+    font-family: Aldrich, Helvetica, sans-serif;
+    font-family: Alef, Helvetica, sans-serif;
+    font-family: Alike Angular, Helvetica, sans-serif;
+    font-family: Allerta Stencil, Helvetica, sans-serif;
+    font-family: Arbutus, Helvetica, sans-serif;
+    font-family: Atomic Age, Helvetica, sans-serif;
+    font-family: Audiowide, Helvetica, sans-serif;
+    font-family: Averia Sans Libre, Helvetica, sans-serif;
+    font-family: Baumans, Helvetica, sans-serif;
+    font-family: Belleza, Helvetica, sans-serif;
+    font-family: BenchNine, Helvetica, sans-serif;
+    font-family: Bigshot One, Helvetica, sans-serif;
+    font-family: Bitter, Helvetica, sans-serif;
+    font-family: Brawler, Helvetica, sans-serif;
+    font-family: Bree Serif, Helvetica, sans-serif;
+    font-family: Cambo, Helvetica, sans-serif;
+    font-family: Candal, Helvetica, sans-serif;
+    font-family: Cantarell, Helvetica, sans-serif;
+    font-family: Carrois Gothic, Helvetica, sans-serif;
+    font-family: Chelsea Market, Helvetica, sans-serif;
+    font-family: Cinzel, Helvetica, sans-serif;
+    font-family: Coda, Helvetica, sans-serif;
+    font-family: Concert One, Helvetica, sans-serif;
+    font-family: Contrail One, Helvetica, sans-serif;
+    font-family: Convergence, Helvetica, sans-serif;
+    font-family: Copse, Helvetica, sans-serif;
+    font-family: Corben, Helvetica, sans-serif;
+    font-family: Crimson Text, Helvetica, sans-serif;
+    font-family: Crushed, Helvetica, sans-serif;
+    font-family: Cuprum, Helvetica, sans-serif;
+    font-family: Cutive Mono, Helvetica, sans-serif;
+    font-family: Days One, Helvetica, sans-serif;
+    font-family: Diplomata, Helvetica, sans-serif;
+    font-family: Doppio One, Helvetica, sans-serif;
+    font-family: Dorsa, Helvetica, sans-serif;
+    font-family: Duru Sans, Helvetica, sans-serif;
+    font-family: Economica, Helvetica, sans-serif;
+    font-family: Electrolize, Helvetica, sans-serif;
+    font-family: Elsie, Helvetica, sans-serif;
+    font-family: Esteban, Helvetica, sans-serif;
+    font-family: Exo, Helvetica, sans-serif;
+    font-family: Expletus Sans, Helvetica, sans-serif;
+    font-family: Federant, Helvetica, sans-serif;
+    font-family: Federo, Helvetica, sans-serif;
+    font-family: Flamenco, Helvetica, sans-serif;
+    font-family: Forum, Helvetica, sans-serif;
+    font-family: Fredericka the Great, Helvetica, sans-serif;
+    font-family: Fredoka One, Helvetica, sans-serif;
+    font-family: GFS Neohellenic, Helvetica, sans-serif;
+    font-family: Geo, Helvetica, sans-serif;
+    font-family: Goblin One, Helvetica, sans-serif;
+    font-family: Gravitas One, Helvetica, sans-serif;
+    font-family: Gruppo, Helvetica, sans-serif;
+}
+
+.header-top p{
+    margin-top: 5px;
+    text-align: right;
+    max-width:100%;
+}
+
+.header-bg{
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 -10px 10px -10px rgba(8, 8, 8, .4),
+        0 10px 10px -10px rgba(8, 8, 8, .4);
+    -moz-box-shadow: inset 0 -10px 10px -10px rgba(8, 8, 8, .4),
+        0 10px 10px -10px rgba(8, 8, 8, .4);
+    -webkit-box-shadow: inset 0 -10px 10px -10px rgba(8, 8, 8, .4),
+        0 10px 10px -10px rgba(8, 8, 8, .4);
+    top: -200px;
+    padding-bottom: 200px;
+    box-sizing: content-box;
+}
+
+.header-content{
+    z-index: 100;
+    position: relative;
+}
+
+.spashscreen-img{
+    max-height: 400px;
+    max-width: 100%;
+}
+
+.margin-top-md{
+    margin-top: 20px;
+}
+
+.margin-top-lg{
+    margin-top: 100px;
+}
+
+@media (max-width: 998px){
+    .margin-top-lg{
+        margin-top: 20px;
+    }
+    /*.header-bg{
+        top: -300px;
+        padding-bottom: 300px;
+    }*/
+}
+
+@media (max-width: 730px) and (min-width: 500px){
+    .header-top h1{
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 500px){
+    .header-top h1{
+        font-size: 45px;
+    }
+}
