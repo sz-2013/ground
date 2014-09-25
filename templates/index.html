@@ -11,10 +11,15 @@
     <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
 
     <link async href="http://fonts.googleapis.com/css?family=Gruppo" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+    <link async href="http://fonts.googleapis.com/css?family=Wire%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+    <link async href="http://fonts.googleapis.com/css?family=Poiret%20One" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+    <link async href="http://fonts.googleapis.com/css?family=Share%20Tech" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+    <link async href="http://fonts.googleapis.com/css?family=Voltaire" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+    <link async href="http://fonts.googleapis.com/css?family=Rajdhani" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
 
 </head>
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom:0">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -35,9 +40,9 @@
         </div>
     </nav>
 
-    <header>
-        <div style="background-image: url({{data.bg.img}})" class="header-bg"></div>
-        <div class="jumbotron">
+    <header data-race="{{data.bg.name}}">
+        <div style="background-image: url({{data.bg.img}})" class="header-bg layer" data-depth="0.20"></div>
+        <div class="jumbotron" >
             <div class="container header-content">
                 <div class="text-center">
                     <div class="header-top">
@@ -48,11 +53,7 @@
                 <div class="row">
                     <div class="col-lg-6 margin-top-lg">
                         <button type="button" class="btn btn-primary btn-lg btn-block registration">Registration</button>
-
-                        <br>
-                        <br>
-
-                        <div class="row row-btns ">
+                        <div class="row row-btns margin-top-lg">
                             <div class="col-xs-6 col-sm-6 text-left">
                                 <a href="#" class="btn btn-large btn-default icon-store">
                                     <img src="{% static "img/appstore.png" %}">
@@ -66,9 +67,9 @@
                         </div>
                     </div>
                     <div class="col-lg-6 ">
-                        <div class="margin-top-md text-center">
-                            <img src="{{data.img}}" class="spashscreen-img">
-                            <p class="text-left">{{data.description|truncatechars:140}}</p>
+                        <div class="margin-top-md text-center" id="splashscreen">
+                            <img src="{{data.img}}" class="spashscreen-img layer" data-depth="0.4">
+                            <p class="text-left splashscreen-text">{{data.description|truncatechars:140}}</p>
                         </div>
                     </div>
                 </div>
@@ -79,13 +80,28 @@
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src=" {% static "js/parralax/parallax.js" %}"></script>
     <script type="text/javascript">
         function setBG(){
             var bg = document.querySelector(".header-bg"), w = bg.offsetWidth, h = bg.offsetHeight, wS = 'auto', hS = '100%';
             if(w > h){hS = 'auto'; wS = '100%'}
             bg.style.backgroundSize = wS + ' ' + hS
         }
-        $(document).ready(setBG)
+        $(document).ready(
+            function(){
+                setBG()
+                var header = document.querySelector('header')
+                var p_list = header.querySelectorAll('p')
+                var cls = header.getAttribute('data-race') == 'amadeus' ? 'light-text' : 'dark-text'
+                for (var i = p_list.length - 1; i >= 0; i--) {
+                    p_list[i].className = p_list[i].className + ' ' + cls
+                };
+                var parallax = new Parallax(header, {
+                    limitX: 40,
+                    limitY: 20,
+                });
+            }
+        )
         $(window).resize(setBG)
     </script>
 </body>
